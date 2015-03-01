@@ -48,16 +48,16 @@ instead.
 * No spaces around curly brackets or `=` in record assignments.
 * Prefer list comprehensions over `lists:map` or `lists:filter`.
 
-    % Yes
-    1 + 1.
-    {ok, Database} = database:connect(Hostname, Password). 
-    User = #user{firstname=FirstName}.
-    Portals = [portal_gun:fire(X, Y, Z) || {X, Y, Z} <- Targets].
+      % Yes
+      1 + 1.
+      {ok, Database} = database:connect(Hostname, Password). 
+      User = #user{firstname=FirstName}.
+      Portals = [portal_gun:fire(X, Y, Z) || {X, Y, Z} <- Targets].
 
-    % No
-    6+5.
-    Chefs = [ "Joe","Gordon","Graham" ],
-    Client = #client{ client_id = ClientId }.
+      % No
+      6+5.
+      Chefs = [ "Joe","Gordon","Graham" ],
+      Client = #client{ client_id = ClientId }.
 
 * Line up a call with lots of arguments by putting arguments indented to the 
 level of the first argument on the top line. Where not possible, indent 4 four 
